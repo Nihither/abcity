@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content-block %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h2>{{ video.name }}</h2>
+            <video src="{{ video.video.url }}" controls></video>
+        </div>
+    </div>
+</div>
+<div class="container"><p>
+
+    
+</p></div>
+{% endblock %}

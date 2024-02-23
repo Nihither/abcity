@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+    
+
+{% block content-block %}
+
+    <div class="container">
+        <div class="row">
+            {% for video in content %}
+                <div class="col-md-4">
+                    <a href="/video/{{ video.id }}">
+                        <div class="thumbnail">
+                            <div class="caption">
+                            <h4>{{ video.name }}</h4>
+                            </div>
+                            <img src="{{ video.thumbnail.url }}" alt="{{ video.name }}"></img>
+                        </div>   
+                    </a>
+                </div>     
+                        
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="container"><p>
+
+        
+    </p></div>
+
+{% endblock %}
+
