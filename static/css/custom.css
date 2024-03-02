@@ -1,0 +1,97 @@
+@media screen and (max-width: 991px) and (orientation: landscape) { 
+    #contacts_header {
+        display: none;
+    }
+
+    #hero_container {
+        top: 50px;
+    }
+
+    #hero_back_img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #hero_title {
+        height: 65vh;
+    }
+}
+
+@media screen and (min-width: 992px) and (orientation: landscape) {
+    #contacts_header_small {
+        display: none;
+    }
+
+    #hero_container {
+        top: 50px;
+    }
+
+    #hero_back_img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #hero_title {
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+    #contacts_header {
+        display: none;
+    }
+
+    #hero_container {
+        top: 50px;
+    }
+
+    #hero_back_img {
+        max-width: auto;
+        height: 70vh;
+        left: -100%;
+    }
+
+    #hero_title {
+        height: 60vh;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px) and (orientation: portrait) { 
+    #contacts_header {
+        display: none;
+    }
+
+    #hero_container {
+        top: 50px;
+    }
+
+    #hero_back_img {
+        max-width: auto;
+        height: 70vh;
+        left: -40%;
+    }
+
+    #hero_title {
+        height: 60vh;
+    }
+}
+
+@media screen and (min-width: 992px) and (orientation: portrait) {
+    #contacts_header_small {
+        display: none;
+    }
+
+    #hero_container {
+        top: 50px;
+    }
+
+    #hero_back_img {
+        max-width: auto;
+        height: 70vh;
+        left: -40%;
+    }
+
+    #hero_title {
+        height: 60vh;
+    }
+}

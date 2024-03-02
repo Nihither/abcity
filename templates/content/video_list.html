@@ -1,31 +1,26 @@
 {% extends 'base.html' %}
 {% load static %}
-    
+
 
 {% block content-block %}
 
-    <div class="container">
-        <div class="row">
-            {% for video in content %}
-                <div class="col-md-4">
-                    <a href="/video/{{ video.id }}">
-                        <div class="thumbnail">
-                            <div class="caption">
-                            <h4>{{ video.name }}</h4>
-                            </div>
-                            <img src="{{ video.thumbnail.url }}" alt="{{ video.name }}"></img>
-                        </div>   
-                    </a>
-                </div>     
-                        
-            {% endfor %}
+<div class="container text-bg-light">
+  <div class="row row-cols-md-2 row-cols-lg-3">
+    {% for video in content %}
+    <div class="col-md-4">
+      <!-- <a href="/video/{{ video.id }}"> -->
+        <div class="card m-1">
+          <div class="card-body">
+            <h4>{{ video.name }}</h4>
+            <a href="{% url 'video_page' video_id=video.id %}" class="stretched-link"></a>
+          </div>
+          <img src="{{ video.thumbnail.url }}" alt="{{ video.name }}" class="img-fluid">
         </div>
+        <!-- </a> -->
+      </div>
+      {% endfor %}
     </div>
-
-    <div class="container"><p>
-
-        
-    </p></div>
-
-{% endblock %}
-
+  </div>
+  
+  {% endblock %}
+  
